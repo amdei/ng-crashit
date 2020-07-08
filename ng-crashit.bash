@@ -6,7 +6,7 @@ set -u # treat unset variables as errors
 # store the current dir
 CUR_DIR=$(pwd)
 
-apt-get install -y --force-yes --no-install-recommends git build-essential wget tar
+apt-get install -y --force-yes --no-install-recommends git build-essential wget tar valgrind
 apt-get install -y --force-yes --no-install-recommends --reinstall libluajit-5.1-dev
 
 mkdir -p /var/log/nginx/
