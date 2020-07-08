@@ -30,8 +30,8 @@
   1. ngninx being run - everything is Ok. 1 master and 1 worker process is running.
   1. ngninx forced to reload configuration - everything is Ok. 1 master and 1 worker process is running.
   1. ngninx forced to reload configuration second time - everything is Ok. 1 master and 1 worker process is running.
-  1. ngninx forced to reload configuration third time - use after free happens in worker process. It may crash. Master process see it, and spawn another worker process. 1 master and 2 worker processes are running.
-  1. ngninx forced to reload configuration fourth time - use-after-free in master process this time. It may crash. 0 master and 2 worker process are running.
+  1. ngninx forced to reload configuration third time - use after free happens in worker process. It may crash with SIGSEGV. Master process see it, and spawn another worker process. 1 master and 2 worker processes are running.
+  1. ngninx forced to reload configuration fourth time - use-after-free in master process this time. It may crash with SIGSEGV. 0 master and 2 worker process are running.
   1. systemd sees that master process crashes, and restart it. As worker processes still occupy listen-ports it fails.
   1. As a result we have got coplete mess.
 
