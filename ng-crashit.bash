@@ -95,9 +95,9 @@ export LUAJIT_LIB=/usr/lib/x86_64-linux-gnu/
 make -j
 
 
-valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p t/servroot/ -c t/servroot/conf/nginx-crashit.conf
-valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p t/servroot/ -c t/servroot/conf/nginx-crashit.conf -s reload
-valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p t/servroot/ -c t/servroot/conf/nginx-crashit.conf -s reload
-valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p t/servroot/ -c t/servroot/conf/nginx-crashit.conf -s reload
+valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p ../t/servroot/ -c conf/nginx.conf
+valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p ../t/servroot/ -c conf/nginx.conf -s reload
+valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p ../t/servroot/ -c conf/nginx.conf -s reload
+valgrind --trace-children=yes  --track-origins=yes --num-callers=50 --suppressions=valgrind.suppress ./objs/nginx -p ../t/servroot/ -c conf/nginx.conf -s reload
 
 cd $CUR_DIR
