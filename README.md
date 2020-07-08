@@ -1,5 +1,5 @@
 # How to crash nginx + Lua module
-TOC
+
 # Synopsis:
   1. Have Linux Debian 9 or 10 installed.
   2. Clone
