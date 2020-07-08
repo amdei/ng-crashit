@@ -13,10 +13,16 @@
   ./ng-crashit.bash
   ```
   5. Enjoy.
-
+  
 # TL;RD
   Issue is VERY fragile - if log-files names being changed it may disappears.
   So up to now **I wasn't able to make simple reproducer**, and this repo is a preliminary set of scripts intended to show how to start with it reproduction.
+
+# Environment
+
+  1. nginx 1.18.0
+  1. lua-nginx-module v0.10.15
+  1. on vanilla Debian 9 or 10
 
 # Long story:
   Recently I run into a strange issue: use-after-free in nginx on reload configuration when lua-nginx-module is used.
