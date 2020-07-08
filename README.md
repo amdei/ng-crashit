@@ -2,16 +2,17 @@
 
 # Synopsis:
   1. Have Linux Debian 9 or 10 installed.
-  2. Clone
+  2. Install lua-resty-core and lua-resty-lrucache libraries somehow.
+  3. Clone
   ```
   git clone https://github.com/amdei/ng-crashit.git
   ```
-  3. Run
+  4. Run
   ```
   cd ng-crashit
   ./ng-crashit.bash
   ```
-  4. Enjoy.
+  5. Enjoy.
 
 # TL;RD
   Issue is VERY fragile - if log-files names being changed it may disappears.
