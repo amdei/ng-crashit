@@ -45,7 +45,7 @@ git checkout v0.3.1
 cd -
 
 cd lua-nginx-module
-git checkout v0.10.15
+git checkout v0.10.17
 cd -
 
 
@@ -81,9 +81,10 @@ export LUAJIT_LIB=/usr/lib/x86_64-linux-gnu/
  --with-zlib=../ngx-libs/zlib-1.2.11 \
  --with-debug \
  --with-http_ssl_module \
+ --with-http_v2_module \
  --with-http_stub_status_module \
  --with-openssl=../ngx-libs/openssl-1.1.1g \
- --with-openssl-opt="no-gost no-comp no-dtls no-deprecated no-dynamic-engine no-engine no-hw-padlock no-nextprotoneg no-psk no-tests no-ts no-ui-console --debug -ggdb3 -DPURIFY" \
+ --with-openssl-opt="no-gost no-comp no-dtls no-deprecated no-dynamic-engine no-engine no-hw-padlock no-nextprotoneg no-psk no-tests no-ts no-ui-console no-ocsp --debug -ggdb3 -DPURIFY" \
  --without-http_autoindex_module \
  --without-http_fastcgi_module \
  --without-http_ssi_module \
